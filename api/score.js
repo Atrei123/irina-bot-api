@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   const name = req.query.name || req.query.id || '';
-  const googleUrl = "https://script.google.com/macros/s/AKfycbzUhzbm-xpxCoQtJn0ndUsLQfpGEXBmLP2dCs8ky9MkQ2M3_5EKkWHnz99LKc3Fppc5/exec?name=" + encodeURIComponent(name);
+  const googleUrl = "https://script.google.com/macros/s/AKfycbz_ymaRMhxbHF2xrl8w1oGdpO_8RTDhdfYGcObgQoOWkg3KxZ3aO8IwLkDh1TYt_vOy/exec?name=" + encodeURIComponent(name);
 
   try {
     const response = await fetch(googleUrl);
